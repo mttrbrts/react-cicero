@@ -30,17 +30,17 @@ module.exports = {
         use: ['shebang-loader']
       },
       {
-        test: /\.ne$/,
+        test: /\.(ne|cta)$/,
         use:['raw-loader']
       }
     ]
   },    
-  resolve: {
-    alias:{
-        'shebang-loader': require.resolve('./src/loaders/shebang.js')
-    }
+  resolveLoader: {
+    modules: ['node_modules', path.resolve(__dirname, 'src/loaders/')],
   },
   node: {
-    fs: 'empty'
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
   }
 };

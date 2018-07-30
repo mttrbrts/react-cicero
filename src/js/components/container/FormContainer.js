@@ -38,7 +38,8 @@ Delivery Schedule: no later than 10 seconds after initiation.
   }
 
   componentDidMount() {
-    Template.fromUrl('https://templates.accordproject.org/archives/fragile-goods@0.3.0.cta').then((template) => { 
+    // Template.fromUrl('https://5b5f4c093813f0393e5e5096--templates-accordproject.netlify.com/archives/fragile-goods@0.3.1.cta').then((template) => { 
+    Template.fromUrl('http://localhost:8080/static/fragile-goods@0.3.2.cta').then((template) => { 
         console.log('Loaded template: ' + template.getIdentifier());
         const state = this.state;
         state.clause = new Clause(template);
