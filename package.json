@@ -1,5 +1,5 @@
 {
-  "name": "webpack-cicero",
+  "name": "react-cicero",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -10,7 +10,6 @@
   "author": "mttrbrts",
   "license": "Apache2.0",
   "dependencies": {
-    "@accordproject/cicero-core": "0.4.7-20180730172509",
     "babel-polyfill": "^6.26.0",
     "codemirror": "^5.29.0",
     "lodash": "^4.17.4",

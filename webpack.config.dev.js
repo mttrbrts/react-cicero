@@ -34,7 +34,7 @@ module.exports = {
         use:['raw-loader']
       }
     ]
-  },    
+  }, 
   resolveLoader: {
     modules: ['node_modules', path.resolve(__dirname, 'src/loaders/')],
   },
